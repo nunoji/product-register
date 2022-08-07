@@ -7,7 +7,7 @@ services: docker
 # コンテナ立ち上げ
 before_install:
 - docker-compose up --build -d
-- docker login -u "$HEROKU_USERNAME" -p "HERROKU_API_KEY" registry.heroku.com
+- docker login -u "$HEROKU_USERNAME" -p "HEROKU_API_KEY" registry.heroku.com
 
 # test script実行
 script:
